@@ -9,18 +9,6 @@ This project will be a social "inspiration" website. Similar to Facebook but "on
 - Inspiration Model for inspiration (name String, quote String)
 - - Silver plan adds user String to Login and Vibe Models
 
-## Git Workflow
-
-- git commit -m “Something” // commit all changes for any feature branches locally
-- git pull origin master // inside feature branch
-- git checkout -b <branchName> // to create feature branch e.g. -b feature-tom-button-component
-- // code something
-- git add .
-- git commit -m "Something
-- git push origin <branchName>
-- // go to GitHub and make pull request to merge feature branch to master branch
-- // someone else should approve the pull request to merge
-
 ## Bronze, Silver, and Gold
 
 ### Requirements all
