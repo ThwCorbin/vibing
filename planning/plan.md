@@ -2,7 +2,12 @@
 
 ## Brief
 
-3 sentences
+This project will be a social "inspiration" website. Similar to Facebook but "only good vibes" are allowed. Clients will be able to post their own "good vibes" along with viewing inspirational quotes from famous people.
+
+- Login Model for logging in/signing up (email String, password String)
+- Vibe Model for vibe (post String, comments Array of Strings)
+- Inspiration Model for inspiration (name String, quote String)
+- - Silver plan adds user String to Login and Vibe Models
 
 ## Bronze, Silver, and Gold
 
