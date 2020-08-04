@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vibing
 
-## Available Scripts
+Vibing is a social "inspiration" website, similar to social media platforms, but with only "good vibes" to share with others. Users can read and post vibes as well as view inspirational quotes.
 
-In the project directory, you can run:
+Website:
 
-### `npm start`
+Repo: https://github.com/ThwCorbin/vibing
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Repo API: https://github.com/ThwCorbin/vibing-api
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+API documentation:
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Vibing is a React front end that uses a MongoDB, Express, and Node.js back end. Users can create, read, update, and delete posts and comments to posts. Users can create an account and login. Users can view inspirational quotes to get their creative vibes moving.
 
-### `npm run build`
+<!-- Screenshot goes here -->
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is our eigth project, and our first major group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- MongoDB
+- Mongoose
+- Express
+- React
+- Node.js
+- JavaScript
+- HTML
+- CSS
+- Storytime
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We developed a bronze/silver/gold plan, which is available in the planning directory in this repo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!--
+Go to http://pub-quiz-game.herokuapp.com/history, which will GET 50 questions in JSON format from the database. See the [API documentation](http://pub-quiz-game.herokuapp.com/doc "Pub Quiz API documentation") for the routes to perform CRUD operations in [Postman](https://www.postman.com/ "A collaboration platform for API development."). -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- Follow the installation instructions below, `cd` to the pub-quiz directory, and run the following commands in the terminal:
 
-## Learn More
+- `node db/seed.js`
+- `nodemon index.js`
+- note: or `node index.js` if you do not have nodemon installed
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then paste http://localhost:3000/history into your favorite browser. Enjoy the JSON data.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note: for better viewing pleasure, add an extension to your browser that formats JSON data. For example, the JSON Viewer extension in Chrome is lovely. -->
 
-### Code Splitting
+## Installation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<!-- - Clone the repo: https://github.com/ThwCorbin/pub-quiz
+- `cd` to the pub-quiz directory
+- run `npm i` in the terminal
+- note: you will also need to install mongodb globally -->
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[MIT](LICENSE.txt "MIT License text file")
