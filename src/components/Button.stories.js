@@ -2,6 +2,11 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "./Button";
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5149575ac3d8c583ae9972c6ba96673c66dcdc13
 storiesOf("Button", module)
 	//* Primary *************** */
 	.add("Primary", () => <Button type="primary" label="Do something" />)
@@ -32,3 +37,8 @@ storiesOf("Button", module)
 	.add("Primary Small Haze", () => (
 		<Button type="primary" small haze label="Do something" />
 	)); // storiesOf "Button"
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5149575ac3d8c583ae9972c6ba96673c66dcdc13

@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  position: flex;
+  flex-direction: column;
+}
+.posts{
+  margin-top: 150px;
 }
 
 .App-logo {
