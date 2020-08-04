@@ -1,0 +1,155 @@
+:root {
+	--white: #ffffff;
+	--gray-filled: #fafafb;
+	--gray-counter: #f6f7f8;
+	--blue: #33a0ff;
+	--blue-haze: #eaf5ff;
+	--red: #f53848;
+	--red-haze: #ffecee;
+	--red-sale: #ff4858;
+	--green: #0ad00a;
+	--green-haze: #e6fae6;
+	--yellow: #ffc600;
+	--yellow-haze: #fff9e5;
+	--black: #22262a;
+	--black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+/** Default *************** */
+button {
+	/* width: 100px; */
+	font-size: 10px;
+	color: var(--white);
+	background-color: var(--black);
+	border-color: var(--black);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 3px;
+	padding: 5px 20px;
+}
+
+/** Large & Small *************** */
+.button-large {
+	padding: 10px 50px;
+}
+
+.button-small {
+	padding: 2px 10px;
+}
+
+/** Types *************** */
+.button-primary {
+	background-color: var(--blue);
+	border-color: var(--blue);
+}
+
+.button-danger {
+	background-color: var(--red);
+	border-color: var(--red);
+}
+
+.button-success {
+	background-color: var(--green);
+	border-color: var(--green);
+}
+
+.button-warning {
+	background-color: var(--yellow);
+	border-color: var(--yellow);
+}
+
+/** Outline *************** */
+.button-outline {
+	color: var(--black);
+	background-color: transparent;
+}
+
+.button-primary-outline {
+	color: var(--blue);
+	border-color: var(--blue);
+	background-color: transparent;
+}
+
+.button-danger-outline {
+	color: var(--red);
+	border-color: var(--red);
+	background-color: transparent;
+}
+
+.button-success-outline {
+	color: var(--green);
+	border-color: var(--green);
+	background-color: transparent;
+}
+
+.button-warning-outline {
+	color: var(--yellow);
+	border-color: var(--yellow);
+	background-color: transparent;
+}
+
+/** Haze *************** */
+.button-haze {
+	color: var(--black);
+	background-color: var(--black-haze);
+	border-color: var(--black-haze);
+}
+
+.button-primary-haze {
+	color: var(--blue);
+	background-color: var(--blue-haze);
+	border-color: var(--blue-haze);
+}
+
+.button-danger-haze {
+	color: var(--red);
+	background-color: var(--red-haze);
+	border-color: var(--red-haze);
+}
+
+.button-success-haze {
+	color: var(--green);
+	background-color: var(--green-haze);
+	border-color: var(--green-haze);
+}
+
+.button-warning-haze {
+	color: var(--yellow);
+	background-color: var(--yellow-haze);
+	border-color: var(--yellow-haze);
+}
+
+/** User Input *************** */
+.button-user-input {
+	color: var(--blue);
+	background-color: var(--blue-haze);
+	border-color: var(--blue-haze);
+}
+
+.button-rectangle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+.button-rectangle > svg {
+	margin: 0 5px;
+}
+
+.button-square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 1px;
+}
+
+/** Hover *************** */
+button:hover {
+	filter: brightness(0.95);
+}
