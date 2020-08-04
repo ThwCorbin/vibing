@@ -3,9 +3,9 @@ import './Addpost.css';
 
 function Addpost(props) {
     return (
-        <div class="Post">
-            <label class="form-label" for="post">Create Post</label>
-            <textarea placeholder="Create Post" rows="3" type="text" id="post" class="form-control"></textarea>
+        <div className="Post">
+            <label className="form-label" for="post">Create Post</label>
+            <textarea placeholder="Share your positive tought" rows="3" type="text" id="post" className="form-control"></textarea>
 
         </div>
 

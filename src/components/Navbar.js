@@ -3,9 +3,9 @@ import './Navbar.css';
 
 function Navbar(props) {
     return (
-        <nav class="navbar">
-            <h1 class="title">VIBING</h1>
-            <a class="famous" href="#">Famous Inspirational</a>
+        <nav className="navbar">
+            <h1 className="title">VIBING</h1>
+            <a className="famous" href="#">Famous Inspirational</a>
 
 
 
