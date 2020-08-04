@@ -16,7 +16,7 @@ Vibing is a React front end that uses a MongoDB, Express, and Node.js back end. 
 
 <!-- Screenshot goes here -->
 
-This is our eigth project, and our first major group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
+This is our eighth project, and our first major group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
 ## Technologies
 
