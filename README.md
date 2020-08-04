@@ -28,7 +28,7 @@ This is our eighth project, and our first major group project, for [General Asse
 - JavaScript
 - HTML
 - CSS
-- Storytime
+- Storybook
 
 ## Features
 
