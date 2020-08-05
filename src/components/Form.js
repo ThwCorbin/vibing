@@ -21,7 +21,7 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.props.modalCallback(this.state.email, this.state.password);
+		this.props.formCallback(this.state.email, this.state.password);
 	}
 
 	render() {
@@ -66,11 +66,7 @@ class Form extends Component {
 					/> */}
 				</label>
 				<br />
-				<input
-					onClick={this.state.props.formCallback}
-					type="submit"
-					value="Submit"
-				/>
+				<input type="submit" value="Submit" />
 			</form>
 		);
 	}
