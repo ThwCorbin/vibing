@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import { Route, Link, Redirect, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
 import Addpost from "./Addpost.js";
 import Button from "./Button.js";
 import Posts from "./Posts.js";
+
+
 
 class App extends Component {
 	constructor(props) {
@@ -15,11 +18,18 @@ class App extends Component {
 
 	render() {
 		return (
+			<React.Fragment>
 			<div className="App">
 				<Header />
 				<Addpost />
 				<Posts />
 			</div>
+			<main>
+				<Route path = "/"/>
+
+				
+			</main>
+			</React.Fragment>
 		);
 	}
 }
