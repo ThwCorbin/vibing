@@ -21,6 +21,10 @@
 	width: 10rem;
 }
 
+.div-form-sign-in {
+	margin-left: auto;
+}
+
 .div-form > p {
 	color: var(--blue-dark);
 }
