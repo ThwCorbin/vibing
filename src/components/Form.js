@@ -21,7 +21,8 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(`User: ${this.state.user}`, `Password: ${this.state.password}`);
+		console.log(e.target);
+		console.log(this.state.user, this.state.password);
 	}
 
 	render() {
@@ -38,13 +39,6 @@ class Form extends Component {
 						value={this.state.user}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="user"
-						type="text"
-						placeholder="user"
-						value={this.state.user}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<label>
 					<input
@@ -54,13 +48,6 @@ class Form extends Component {
 						value={this.state.password}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="password"
-						type="text"
-						placeholder="Password"
-						value={this.state.password}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<input type="submit" value="Submit" />
 			</form>
