@@ -15,10 +15,10 @@ function Navbar(props) {
 				</a>
 			</div>
 			<div class="div-form-sign-in">
-				<Form formCallback={props.formCallback} />
+				<Form />
 			</div>
 			<div class="div-form-sign-up">
-				<Form formCallback={props.formCallback} />
+				<Form />
 			</div>
 		</nav>
 	);

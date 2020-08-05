@@ -12,6 +12,7 @@ class App extends Component {
 			dog: "dog",
 		};
 	} //constructor
+
 	render() {
 		return (
 			<div className="App">
