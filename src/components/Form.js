@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
+// import Input from "./Input";
 
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
@@ -20,7 +21,8 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(`User: ${this.state.user}`, `Password: ${this.state.password}`);
+		console.log(e.target);
+		console.log(this.state.user, this.state.password);
 	}
 
 	render() {
