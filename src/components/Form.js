@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./Form.css";
+import Input from "./Input";
 
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			// value: "",
-			question: "",
-			answers: "",
+			email: "",
+			password: "",
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -21,41 +21,53 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.props.modalCallback(this.state.question, this.state.answers);
+		this.props.modalCallback(this.state.email, this.state.password);
 	}
 
 	render() {
-		// const { id, type, name, label, placeholder, onClick } = this.state.props;
-		// className={this.props.className}
 		return (
 			<form className="form form-add" onSubmit={this.handleSubmit}>
 				<label>
-					Question:
+					Email:
 					<br />
-					<Input id={this.state.id} />
-					{/* <input
-						name="question"
+					<Input
+						id="email"
 						type="text"
-						value={this.state.question}
+						name="email"
+						placeholder="Email"
+						value={this.state.email}
+						onChange={this.handleChange}
+					/>
+					{/* <input
+						name="email"
+						type="text"
+						value={this.state.email}
 						onChange={this.handleChange}
 					/> */}
 				</label>
 				<br />
 				<label>
-					Answers:
+					Password:
 					<br />
-					{/* <Input /> */}
-					{/* <input
-						name="answers"
+					<Input
+						id="password"
 						type="text"
-						value={this.state.answers}
-						placeholder="Up to 4 separated by commas - first is correct"
+						name="password"
+						placeholder="Password"
+						value={this.state.email}
 						onChange={this.handleChange}
+					/>
+					{/* <input
+						name="password"
+						type="text"
+						value={this.state.password}
+						onChange={this.handleChange}
+						placeholder="Up to 4 separated by commas - first is correct"
 					/> */}
 				</label>
 				<br />
 				<input
-					onClick={this.state.props.onClick}
+					onClick={this.state.props.formCallback}
 					type="submit"
 					value="Submit"
 				/>
