@@ -7,7 +7,7 @@ class Form extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			email: "",
+			user: "",
 			password: "",
 		};
 
@@ -21,10 +21,7 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(
-			`Email: ${this.state.email}`,
-			`Password: ${this.state.password}`
-		);
+		console.log(`User: ${this.state.user}`, `Password: ${this.state.password}`);
 	}
 
 	render() {
@@ -35,17 +32,17 @@ class Form extends Component {
 			>
 				<label>
 					<input
-						name="email"
+						name="user"
 						type="text"
-						placeholder="Email"
-						value={this.state.email}
+						placeholder="user"
+						value={this.state.user}
 						onChange={this.handleChange}
 					/>
 					{/* <Input
-						name="email"
+						name="user"
 						type="text"
-						placeholder="Email"
-						value={this.state.email}
+						placeholder="user"
+						value={this.state.user}
 						onChange={this.handleChange}
 					/> */}
 				</label>
