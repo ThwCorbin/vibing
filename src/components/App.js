@@ -5,6 +5,7 @@ import Header from "./Header";
 import Addpost from "./Addpost.js";
 import Button from "./Button.js";
 import Posts from "./Posts.js";
+import SignUp from "./SignUp";
 
 
 
@@ -25,9 +26,8 @@ class App extends Component {
 				<Posts />
 			</div>
 			<main>
-				<Route path = "/"/>
+				<Route path="/signup" component={SignUp} exact={true}/>
 
-				
 			</main>
 			</React.Fragment>
 		);

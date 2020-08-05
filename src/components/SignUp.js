@@ -1,5 +1,5 @@
-import React, {Component} from ("react")
-import Form from ('./Form.js')
+import React, {Component} from "react"
+import Form from './Form.js'
 
 
 class SignUp extends Component {
@@ -10,3 +10,4 @@ class SignUp extends Component {
     }
 }
 
+export default SignUp
