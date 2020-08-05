@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
 
-const Button = (props) => {
-
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
 	constructor(props) {
