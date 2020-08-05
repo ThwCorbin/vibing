@@ -38,13 +38,6 @@ class Form extends Component {
 						value={this.state.user}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="user"
-						type="text"
-						placeholder="user"
-						value={this.state.user}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<label>
 					<input
@@ -54,13 +47,6 @@ class Form extends Component {
 						value={this.state.password}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="password"
-						type="text"
-						placeholder="Password"
-						value={this.state.password}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<input type="submit" value="Submit" />
 			</form>
