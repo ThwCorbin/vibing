@@ -1,26 +1,17 @@
-.navbar{
-    display: flex;
-   flex-direction: row;
-   background-color: #282c34;
-   height: 70px;
-   display: flex;
-   
-   align-items: center;
-   justify-content: center;
-   
-   color: white;
-  
-
-}
-.famous{
-    margin-top:10px;
-    margin-left:220px;
-    color:white;
+.navbar {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
 }
 
-.title{
-    margin-top: 25px;
-    margin-left: 340px;
-    font-size: 40px;
-    
+.famous {
+	margin-top: 10px;
+	margin-left: 220px;
+	color: white;
+}
+
+.title {
+	margin-top: 1rem;
+	text-align: center;
 }

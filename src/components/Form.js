@@ -27,7 +27,10 @@ class Form extends Component {
 
 	render() {
 		return (
-			<form className="form form-sign-in" onSubmit={this.handleSubmit}>
+			<form
+				className="form form-sign-in form-sign-up"
+				onSubmit={this.handleSubmit}
+			>
 				<label>
 					<input
 						name="email"

@@ -15,11 +15,13 @@ function Navbar(props) {
 				</a> */}
 			</div>
 			<div class="div-form-sign-in">
+				<p>Sign In</p>
 				<Form />
 			</div>
-			{/* <div class="div-form-sign-up">
+			<div class="div-form-sign-up">
+				<p>Sign Up</p>
 				<Form />
-			</div> */}
+			</div>
 		</nav>
 	);
 }
