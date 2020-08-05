@@ -6,6 +6,7 @@ import Addpost from "./Addpost.js";
 import Button from "./Button.js";
 import Posts from "./Posts.js";
 import SignUp from "./SignUp";
+import Home from "./Home"
 
 
 
@@ -20,15 +21,9 @@ class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
-			<div className="App">
-				<Header />
-				<Addpost />
-				<Posts />
-			</div>
 			<main>
 				<Route path="/signup" component={SignUp} exact={true}/>
-				<Route path="/signup" component={Home} exact={true}/>
-
+				<Route path="/home" component={Home} exact={true}/>
 			</main>
 			</React.Fragment>
 		);
