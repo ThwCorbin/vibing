@@ -17,6 +17,9 @@ function Navbar(props) {
 			<div class="div-form-sign-in">
 				<Form formCallback={props.formCallback} />
 			</div>
+			<div class="div-form-sign-up">
+				<Form formCallback={props.formCallback} />
+			</div>
 		</nav>
 	);
 }
