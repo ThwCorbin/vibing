@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import './Addpost.css';
+import React from "react";
+import "./Addpost.css";
+import Textarea from "./Textarea";
 
+// https://reactjs.org/docs/forms.html#the-textarea-tag
 function Addpost(props) {
-    return (
-        <div className="Post">
-            <label className="form-label" for="post">Create Post</label>
-            <textarea placeholder="Share your positive tought" rows="3" type="text" id="post" className="form-control"></textarea>
-
-        </div>
-
-
-    )
+	return (
+		<div>
+			<Textarea />
+		</div>
+	);
 }
 
 export default Addpost;
