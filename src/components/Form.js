@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
-import Input from "./Input";
+// import Input from "./Input";
 
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
@@ -21,54 +21,48 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
+		console.log(e.target);
 		console.log(this.state.email, this.state.password);
 	}
 
 	render() {
 		return (
-			<form className="form form-add" onSubmit={this.handleSubmit}>
+			<form className="form form-sign-in" onSubmit={this.handleSubmit}>
 				<label>
-					Email:
-					<br />
-					<Input
-						id="email"
-						type="text"
+					<input
 						name="email"
+						type="text"
 						placeholder="Email"
 						value={this.state.email}
 						onChange={this.handleChange}
 					/>
-					{/* <input
+					{/* <Input
 						name="email"
 						type="text"
+						placeholder="Email"
 						value={this.state.email}
 						onChange={this.handleChange}
 					/> */}
 				</label>
-				<br />
 				<label>
-					Password:
-					<br />
-					<Input
-						id="password"
-						type="text"
-						name="password"
-						placeholder="Password"
-						value={this.state.email}
-						onChange={this.handleChange}
-					/>
-					{/* <input
+					<input
 						name="password"
 						type="text"
+						placeholder="password"
 						value={this.state.password}
 						onChange={this.handleChange}
-						placeholder="Up to 4 separated by commas - first is correct"
+					/>
+					{/* <Input
+						name="password"
+						type="text"
+						placeholder="Password"
+						value={this.state.password}
+						onChange={this.handleChange}
 					/> */}
 				</label>
-				<br />
 				<input type="submit" value="Submit" />
 			</form>
-		);
+		); //return
 	}
 } //Form
 

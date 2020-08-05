@@ -10,16 +10,16 @@ function Navbar(props) {
 			</div>
 			<div className="div-link-inspiration">
 				{/* Replace <a> with a React Router <Link /> to "/inspiration" */}
-				<a className="famous" href="#">
+				{/* <a className="famous" href="#">
 					Inspiration
-				</a>
+				</a> */}
 			</div>
 			<div class="div-form-sign-in">
 				<Form />
 			</div>
-			<div class="div-form-sign-up">
+			{/* <div class="div-form-sign-up">
 				<Form />
-			</div>
+			</div> */}
 		</nav>
 	);
 }
