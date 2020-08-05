@@ -1,7 +1,42 @@
+/** Variables ############### */
+:root {
+	--white: #ffffff;
+	--white-off: #f0f8ff;
+	--red: #cf1717;
+	--pink-dark: #cf357a;
+	--pink: #e97da4;
+	--orange: #e69129;
+	--green: #0fc50f;
+	--green-dark: #196319;
+	--blue: #2e58d4;
+	--blue-light: #719ce6;
+	--blue-dark: #001d81;
+	--blue-transparent: 0, 29, 129;
+	--silver: #c0c0c0;
+	--gray: #788ea1;
+	--gray-dark: #504c4e;
+	--black: #000000;
+}
+
+/** Reset ###############  */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/* border: 0.1rem solid red; */
+}
+
+/** Body ********************* */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	width: 100vw;
+	height: 100vh;
+}
+
 .App {
 	display: flex;
 	flex-direction: column;
-}
-.posts {
-	margin-top: 150px;
+	align-items: center;
+	width: 100%;
 }

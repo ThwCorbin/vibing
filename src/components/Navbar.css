@@ -1,17 +1,31 @@
 .navbar {
 	display: flex;
-	height: 70px;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.famous {
-	margin-top: 10px;
-	margin-left: 220px;
-	color: white;
+.navbar > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	list-style: none;
+	margin-left: 10%;
 }
 
-.title {
-	margin-top: 1rem;
-	text-align: center;
+.navbar > ul > li {
+	color: var(--blue-dark);
+	margin-right: 1rem;
+}
+
+.div-form {
+	width: 10rem;
+}
+
+.div-form-sign-in {
+	margin-left: auto;
+}
+
+.div-form > p {
+	color: var(--blue-dark);
 }

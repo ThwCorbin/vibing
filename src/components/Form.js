@@ -21,8 +21,10 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(e.target);
-		console.log(this.state.email, this.state.password);
+		console.log(
+			`Email: ${this.state.email}`,
+			`Password: ${this.state.password}`
+		);
 	}
 
 	render() {
