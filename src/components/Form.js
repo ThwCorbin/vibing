@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Form.css";
-// import Input from "./Input";
 
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
