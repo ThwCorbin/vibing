@@ -16,3 +16,11 @@
 	color: var(--blue-dark);
 	margin-right: 1rem;
 }
+
+.div-form {
+	width: 10rem;
+}
+
+.div-form > p {
+	color: var(--blue-dark);
+}

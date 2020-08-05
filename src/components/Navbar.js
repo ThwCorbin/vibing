@@ -15,11 +15,11 @@ function Navbar(props) {
 					{/* Need a React Router <Link /> to "/inspiration" */}
 				</li>
 			</ul>
-			<div class="div-form-sign-in">
+			<div class="div-form div-form-sign-in">
 				<p>Sign In</p>
 				<Form />
 			</div>
-			<div class="div-form-sign-up">
+			<div class="div-form div-form-sign-up">
 				<p>Sign Up</p>
 				<Form />
 			</div>
