@@ -1,7 +1,4 @@
 .navbar {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	width: 70%;
 }
 
@@ -9,7 +6,6 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-end;
 	list-style: none;
 }
 
