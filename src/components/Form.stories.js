@@ -9,7 +9,7 @@ storiesOf("Form", module)
 	.add("Sign-up", () => (
 		<Form
 			className="form form-sign-up"
-			type="sig-nup"
+			type="sign-up"
 			labelEmail="Sign up"
 			name="sign-up"
 			onClick={action("Clicked Input")}
