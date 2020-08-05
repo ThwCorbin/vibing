@@ -18,10 +18,7 @@ class App extends Component {
 			<div className="App">
 				<Header />
 				<Addpost />
-				<Button type="primary" small label="POST" />
-				<div className="posts">
-					<Posts />
-				</div>
+				<Posts />
 			</div>
 		);
 	}
