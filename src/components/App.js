@@ -12,11 +12,12 @@ class App extends Component {
 			dog: "dog",
 		};
 	} //constructor
+
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<h1 className="title">VIBING</h1>
+				<header className="app-header">
+					<h1 className="h1-title">VIBING</h1>
 					<Navbar />
 				</header>
 				<div className="addpost">

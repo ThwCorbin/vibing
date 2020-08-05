@@ -10,12 +10,17 @@ function Navbar(props) {
 			</div>
 			<div className="div-link-inspiration">
 				{/* Replace <a> with a React Router <Link /> to "/inspiration" */}
-				<a className="famous" href="#">
+				{/* <a className="famous" href="#">
 					Inspiration
-				</a>
+				</a> */}
 			</div>
 			<div class="div-form-sign-in">
-				<Form formCallback={props.formCallback} />
+				<p>Sign In</p>
+				<Form />
+			</div>
+			<div class="div-form-sign-up">
+				<p>Sign Up</p>
+				<Form />
 			</div>
 		</nav>
 	);
