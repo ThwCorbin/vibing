@@ -1,16 +1,12 @@
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	width: 70%;
 }
 
 .navbar > ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-end;
 	list-style: none;
-	margin-left: 10%;
 }
 
 .navbar > ul > li {

@@ -7,7 +7,7 @@ function Navbar(props) {
 		<nav className="navbar">
 			<ul>
 				<li className="li-home">
-					Home
+					Vibes
 					{/* Need a React Router <Link /> to "/" */}
 				</li>
 				<li className="li-inspiration">
