@@ -27,6 +27,7 @@ class App extends Component {
 			</div>
 			<main>
 				<Route path="/signup" component={SignUp} exact={true}/>
+				<Route path="/signup" component={Home} exact={true}/>
 
 			</main>
 			</React.Fragment>
