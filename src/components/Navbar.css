@@ -14,7 +14,7 @@
 }
 
 .navbar > ul > li {
-	color: var(--blue-dark);
+	color: var(--blue-medium);
 	margin-right: 1rem;
 }
 
@@ -27,5 +27,15 @@
 }
 
 .div-form > p {
-	color: var(--blue-dark);
+	color: var(--blue-medium);
+}
+
+.navbar > ul > li:hover {
+	color: var(--red);
+	/* filter: brightness(0.9); */
+}
+
+.navbar > ul > li:active {
+	color: var(--green);
+	text-decoration: underline;
 }

@@ -9,11 +9,11 @@ header {
 
 .h1-title {
 	font-size: 3rem;
-	color: var(--blue);
+	color: var(--coral);
 	margin-top: 0.5rem;
 }
 
 .h2-subtitle {
-	color: var(--pink-dark);
+	color: var(--aqua);
 	padding-bottom: 1rem;
 }
