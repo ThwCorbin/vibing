@@ -25,36 +25,40 @@ class Form extends Component {
 	}
 
 	render() {
+		// const { id, type, name, label, placeholder, onClick } = this.state.props;
 		// className={this.props.className}
 		return (
 			<form className="form form-add" onSubmit={this.handleSubmit}>
 				<label>
 					Question:
 					<br />
-					<input
+					<Input id={this.state.id} />
+					{/* <input
 						name="question"
 						type="text"
 						value={this.state.question}
 						onChange={this.handleChange}
-					/>
+					/> */}
 				</label>
 				<br />
 				<label>
 					Answers:
 					<br />
-					<input
+					{/* <Input /> */}
+					{/* <input
 						name="answers"
 						type="text"
 						value={this.state.answers}
 						placeholder="Up to 4 separated by commas - first is correct"
 						onChange={this.handleChange}
-					/>
+					/> */}
 				</label>
 				<br />
-				<input type="submit" value="Submit" />
-				<p className="cancel" onClick={this.props.modalCallback}>
-					Cancel
-				</p>
+				<input
+					onClick={this.state.props.onClick}
+					type="submit"
+					value="Submit"
+				/>
 			</form>
 		);
 	}
