@@ -17,10 +17,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<div className="addpost">
-					<Addpost />
-					<Button type="primary" small label="POST" />
-				</div>
+				<Addpost />
+				<Button type="primary" small label="POST" />
 				<div className="posts">
 					<Posts />
 				</div>

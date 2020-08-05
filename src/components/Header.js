@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Navbar from "./Navbar";
 
-function Header() {
+function Header(props) {
 	return (
 		<header>
 			<h1 className="h1-title">Vibing</h1>
