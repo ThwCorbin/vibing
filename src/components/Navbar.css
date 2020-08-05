@@ -10,6 +10,7 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	list-style: none;
+	margin-left: 10%;
 }
 
 .navbar > ul > li {
