@@ -1,0 +1,12 @@
+.form > label {
+	color: var(--blue);
+}
+
+.form > label > input {
+	width: 95%;
+	margin-top: 0.25rem;
+}
+
+.form > br {
+	margin-bottom: 1rem;
+}
