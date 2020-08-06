@@ -29,7 +29,6 @@ class Inspirations extends Component {
       return (
         <div>
           <p>{item.quote}</p>
-
           <p>{item.name}</p>
         </div>
       ); //return
@@ -40,7 +39,7 @@ class Inspirations extends Component {
         <Header />
         <div>{list}</div>
       </React.Fragment>
-    );
+    )
   } //render
 } //component
 
