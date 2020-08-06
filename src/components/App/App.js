@@ -17,7 +17,7 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<main>
-					<Route path="/home" component={Home} exact={true} />
+					<Route path="/" component={Home} exact={true} />
 					<Route path="/signup" component={SignUp} exact={true} />
 					<Route path="/inspirations" component={Inspirations} exact={true} />
 				</main>

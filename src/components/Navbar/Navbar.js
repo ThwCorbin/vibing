@@ -1,13 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-import Form from "../Form/Form";
 import { Link } from "react-router-dom";
 
 function Navbar(props) {
 	return (
 		<nav className="navbar">
 			<ul>
-				<Link to="/home">
+				<Link to="/">
 					<li className="li-home">Vibes</li>
 				</Link>
 				<Link to="/inspirations">
