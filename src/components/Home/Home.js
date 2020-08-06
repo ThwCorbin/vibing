@@ -3,6 +3,8 @@ import "./Home.css";
 import Header from "../Header/Header";
 import Addpost from "../Addpost/Addpost";
 import Post from "../Post/Post";
+import { Link } from "react-router-dom";
+
 
 const url = `https://vibing-api.herokuapp.com/home/posts`;
 
@@ -46,7 +48,7 @@ class Home extends Component {
 			<div className="App">
 				<Header />
 				<Addpost callback={() => this.getPosts} />
-				<ul className="ul-posts">{postsList}</ul>
+				<Link to = '/vibes' ><ul className="ul-posts">{postsList}</ul></Link>
 			</div>
 		);
 	}
