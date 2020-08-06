@@ -4,13 +4,13 @@ import "./App.css";
 import SignUp from "../SignUp/SignUp";
 import Home from "../Home/Home";
 import Inspirations from "../Inspirations/Inspirations";
-import Vibe from "../Vibe/Vibe"
+import Vibe from "../Vibe/Vibe";
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			dog: "dog",
+			value: "",
 		};
 	} //constructor
 
@@ -21,10 +21,12 @@ class App extends Component {
 					<Route path="/" component={Home} exact={true} />
 					<Route path="/signup" component={SignUp} exact={true} />
 					<Route path="/inspirations" component={Inspirations} exact={true} />
-					<Route path="/vibes/:id" render={routerProps => {
-            return <Vibe 
-            {...routerProps} 
-            {...this.state}/>}}/>
+					<Route
+						path="/vibes/:id"
+						render={(routerProps) => {
+							return <Vibe {...routerProps} {...this.state} />;
+						}}
+					/>
 				</main>
 			</React.Fragment>
 		); //return
