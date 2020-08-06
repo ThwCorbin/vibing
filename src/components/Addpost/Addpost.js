@@ -6,7 +6,7 @@ import Textarea from "../Textarea/Textarea";
 function Addpost(props) {
 	return (
 		<div>
-			<Textarea />
+			<Textarea callback={props.callback} />
 		</div>
 	);
 }

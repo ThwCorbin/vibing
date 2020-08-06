@@ -36,6 +36,7 @@ class Textarea extends Component {
 			  "Content-Type": "application/json",
 			},
 			body: JSON.stringify(newPost),
+			this.props.callback();
 		  }
 		
 		fetch(url ,optionPOST)
