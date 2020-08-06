@@ -47,7 +47,7 @@ class Home extends Component {
 			let postsArr = this.state.posts;
 			postsList = postsArr.map((post, idx) => {
 				return (
-					<div>
+					<div className="div-posts">
 						<Post
 							post={post}
 							id={this.state.id}
