@@ -1,0 +1,19 @@
+.form-post {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-post > label > textarea {
+	width: 19.5rem;
+	min-height: 5rem;
+	font-size: 1rem;
+	color: var(--gray-dark);
+	padding: 0.5rem;
+	border: 0.1rem solid var(--coral);
+	margin: 1rem;
+}
+
+.form-post > Button {
+	margin-top: -0.5rem;
+}
