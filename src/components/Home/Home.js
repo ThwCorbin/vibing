@@ -14,6 +14,10 @@ class Home extends Component {
 		};
 	}
 
+	handleEvent = (e) => {
+		console.log(e);
+	};
+
 	getPosts = () => {
 		// * Fetch posts
 		fetch(url)
@@ -21,7 +25,6 @@ class Home extends Component {
 				return res.json();
 			})
 			.then((posts) => {
-				console.log(posts[0].post);
 				this.setState({
 					posts: posts,
 				}); //setState
