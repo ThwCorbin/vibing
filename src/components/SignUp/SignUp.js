@@ -1,17 +1,16 @@
-import React, {Component} from "react"
-import Form from './Form.js'
-import Header from './Header'
-
+import React, { Component } from "react";
+import Form from "../Form/Form";
+import Header from "../Header/Header";
 
 class SignUp extends Component {
-    render() {
-        return(
-            <React.Fragment>
-            <Header/>
-            <Form/>
-            </React.Fragment>
-        )
-    }
+	render() {
+		return (
+			<React.Fragment>
+				<Header />
+				<Form />
+			</React.Fragment>
+		);
+	}
 }
 
-export default SignUp
+export default SignUp;
