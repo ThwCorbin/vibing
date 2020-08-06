@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Form.css";
-
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
 	constructor(props) {
@@ -9,25 +8,21 @@ class Form extends Component {
 			user: "",
 			password: "",
 		};
-
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
-
 	handleChange(e) {
 		this.setState({ [e.target.name]: e.target.value });
 	}
-
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(e.target);
-		console.log(this.state.user, this.state.password);
-	}
+		this.props.formCallback(this.state.user, this.state.password);
 
+	}
 	render() {
 		return (
 			<form
-				className="form form-sign-in form-sign-up"
+				className=" form form-sign-in form-sign-up"
 				onSubmit={this.handleSubmit}
 			>
 				<label>
@@ -53,5 +48,4 @@ class Form extends Component {
 		); //return
 	}
 } //Form
-
 export default Form;
