@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./Form.css";
-// import Input from "./Input";
 
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			email: "",
+			user: "",
 			password: "",
 		};
 
@@ -21,10 +20,8 @@ class Form extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(
-			`Email: ${this.state.email}`,
-			`Password: ${this.state.password}`
-		);
+		console.log(e.target);
+		console.log(this.state.user, this.state.password);
 	}
 
 	render() {
@@ -35,19 +32,12 @@ class Form extends Component {
 			>
 				<label>
 					<input
-						name="email"
+						name="user"
 						type="text"
-						placeholder="Email"
-						value={this.state.email}
+						placeholder="user"
+						value={this.state.user}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="email"
-						type="text"
-						placeholder="Email"
-						value={this.state.email}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<label>
 					<input
@@ -57,13 +47,6 @@ class Form extends Component {
 						value={this.state.password}
 						onChange={this.handleChange}
 					/>
-					{/* <Input
-						name="password"
-						type="text"
-						placeholder="Password"
-						value={this.state.password}
-						onChange={this.handleChange}
-					/> */}
 				</label>
 				<input type="submit" value="Submit" />
 			</form>
