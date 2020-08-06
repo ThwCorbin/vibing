@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import Form from "./Form";
 
 function Navbar(props) {
 	return (
