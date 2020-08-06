@@ -21,7 +21,7 @@ class App extends Component {
 					<Route path="/" component={Home} exact={true} />
 					<Route path="/signup" component={SignUp} exact={true} />
 					<Route path="/inspirations" component={Inspirations} exact={true} />
-					<Route path="/vibes/" render={routerProps => {
+					<Route path="/vibes/:id" render={routerProps => {
             return <Vibe 
             {...routerProps} 
             {...this.state}/>}}/>

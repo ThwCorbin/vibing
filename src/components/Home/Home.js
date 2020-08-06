@@ -13,6 +13,7 @@ class Home extends Component {
 		super(props);
 		this.state = {
 			posts: [],
+			data: []
 		};
 	}
 
@@ -22,15 +23,17 @@ class Home extends Component {
 
 	getPosts = () => {
 		// * Fetch posts
+		console.log("Something fetched");
 		fetch(url)
 			.then((res) => {
 				return res.json();
 			})
 			.then((posts) => {
 				this.setState({
-					posts: posts,
+					posts: posts, 
 				}); //setState
 			})
+
 			.then(() => {}); //fetch
 	}; //getPosts
 
@@ -47,8 +50,8 @@ class Home extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<Addpost callback={() => this.getPosts} />
-				<Link to = '/vibes' ><ul className="ul-posts">{postsList}</ul></Link>
+				<Addpost callback={this.getPosts} />
+				<ul className="ul-posts"><Link to = {'/vibes/' + this.state}>{postsList}</Link></ul>
 			</div>
 		);
 	}
