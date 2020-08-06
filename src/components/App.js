@@ -6,28 +6,27 @@ import Addpost from "./Addpost.js";
 import Button from "./Button.js";
 import Posts from "./Posts.js";
 import SignUp from "./SignUp";
-import Home from "./Home"
-
-
+import Home from "./Home";
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			dog: "dog",
-		};
-	} //constructor
+  constructor(props) {
+    super(props);
+    this.state = {
+      dog: "dog",
+    };
+  } //constructor
 
-	render() {
-		return (
-			<React.Fragment>
-			<main>
-				<Route path="/signup" component={SignUp} exact={true}/>
-				<Route path="/home" component={Home} exact={true}/>
-			</main>
-			</React.Fragment>
-		);
-	}
+  render() {
+    return (
+      <React.Fragment>
+        <main>
+          <Route path="/signup" component={SignUp} exact={true} />
+          <Route path="/home" component={Home} exact={true} />
+          <Route path="/" render={() => <Redirect to="/home" />}/>
+        </main>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
