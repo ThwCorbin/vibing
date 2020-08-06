@@ -17,7 +17,6 @@ class Form extends Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.formCallback(this.state.user, this.state.password);
-
 	}
 	render() {
 		return (
