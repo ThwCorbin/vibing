@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Post from "../Post/Post";
 import Textarea from "../Textarea/Textarea";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 const url = `https://vibing-api.herokuapp.com/home/posts`;
 
@@ -46,12 +47,22 @@ class Home extends Component {
 			let postsArr = this.state.posts;
 			postsList = postsArr.map((post, idx) => {
 				return (
-					<Post
-						post={post}
-						id={this.state.id}
-						callback={this.handleEvent}
-						key={idx}
-					/>
+					<div>
+						<Post
+							post={post}
+							id={this.state.id}
+							callback={this.handleEvent}
+							key={idx}
+						/>
+						{this.state.id ? (
+							<Link to={"/vibes/" + this.state.id}>
+								 <Button type="primary" small outline label="Edit" />
+								   
+							</Link>
+						) : (
+							<Button type="primary" small outline label="Edit" />
+						)}
+					</div>
 				);
 			}); //answerList
 		}

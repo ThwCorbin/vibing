@@ -1,60 +1,55 @@
 import React, { Component } from "react";
-import {
-	Route,
-	Switch
-} from 'react-router-dom'
-import axios from 'axios'
+// import { Route, Switch } from "react-router-dom";
+import axios from "axios";
 import Form from "../Form/Form";
 import Header from "../Header/Header";
 
 class SignUp extends Component {
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.state = {
-			username: '',
-			password: '',
-			isLoggedIn: false
-		}
+			username: "",
+			password: "",
+			isLoggedIn: false,
+		};
 
+		this.handleInput = this.handleInput.bind(this);
 
-		this.handleInput = this.handleInput.bind(this)
-
-		this.handleSignUp = this.handleSignUp.bind(this)
+		this.handleSignUp = this.handleSignUp.bind(this);
 	}
 
 	componentDidMount() {
 		if (localStorage.token) {
 			this.setState({
-				isLoggedIn: true
-			})
+				isLoggedIn: true,
+			});
 		} else {
 			this.setState({
-				isLoggedIn: false
-			})
+				isLoggedIn: false,
+			});
 		}
 	}
 
-
-
 	handleInput(e) {
 		this.setState({
-			[e.target.name]: e.target.value
-		})
+			[e.target.name]: e.target.value,
+		});
 	}
 
 	handleSignUp(username, password) {
-		console.log("singing")
+		console.log("singing");
 		// e.preventDefault()
-		axios.post('https://vibing-api.herokuapp.com/home/users/signup', {
-			username: username,
-			password: password
-		})
-			.then(response => {
-				localStorage.token = response.data.token
-				this.setState({ isLoggedIn: true })
+		axios
+			.post("https://vibing-api.herokuapp.com/home/users/signup", {
+				username: username,
+				password: password,
 			})
-			.catch(err => console.log(err))
+			.then((response) => {
+				localStorage.token = response.data.token;
+				this.setState({ isLoggedIn: true });
+			})
+			.catch((err) => console.log(err));
 	}
 	// handleForm(username, password) {
 	// 	console.log(username, password);

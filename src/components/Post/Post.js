@@ -1,6 +1,7 @@
 import React from "react";
 import "./Post.css";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 function Post(props) {
 	let post = props.post.post;
@@ -9,7 +10,7 @@ function Post(props) {
 	return (
 		<React.Fragment>
 			<div id={index} className="div-post" onClick={props.callback}>
-				{props.id ? <Link to={"/vibes/" + props.id}>   {post} </Link> : null}
+				{post}
 			</div>
 		</React.Fragment>
 	);
