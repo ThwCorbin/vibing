@@ -10,12 +10,20 @@ const optionGET = {
     },
   }
 
+  const optionDELETE = {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }
+
 
 class Vibe extends Component {
   constructor() {
     super();
     this.state = {
       data: [],
+      id: "",
     };
   }
   componentWillMount() {
@@ -27,19 +35,35 @@ class Vibe extends Component {
         console.log(err);
     });
   }//componentWillMount
+
+  
   render() {
-    let display = this.state.data.map((item) => {
-      if ( item._id=== this.props.match.params.id) {
-        return (
-          <React.Fragment>
+      let display = this.state.data.map((item) => {
+          if ( item._id=== this.props.match.params.id) {
+              return (
+                  <React.Fragment>
             <Header />
         <div>{item.post}</div>
+        <button onClick ={()=> {this.remove(item._id)}}>Delete</button>
           </React.Fragment>
         );
-      }
-    }); //display
-    return <div>{display}</div>
-  } //render
+    } else {
+        return null
+    }
+}); //display
+return <div>{display}</div>
+} //render
+
+
+
+remove(props) {
+    console.log(props)
+  fetch(url + '/' + props , optionDELETE)
+    .then(res => res.json())
+    .catch((err) => {
+      console.log(err);
+    });
+}//remove
 
 } //Vibe
 

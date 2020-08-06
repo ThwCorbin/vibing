@@ -24,6 +24,8 @@ class Inspirations extends Component {
 			.catch((err) => {
 				console.log(err);
 			});
+
+			
 	} //componentWillMount
 	render() {
 		let list = this.state.data.map((item) => {
@@ -32,6 +34,7 @@ class Inspirations extends Component {
 					<p>{item.quote}</p>
 
 					<p>{item.name}</p>
+					{console.log(this.state.data)}
 				</div>
 			); //return
 		});
@@ -44,5 +47,4 @@ class Inspirations extends Component {
 		);
 	} //render
 } //component
-
 export default Inspirations;
