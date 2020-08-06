@@ -1,6 +1,7 @@
 .li-post {
-	width: 20rem;
+	width: 19.5rem;
 	min-height: 5rem;
+	font-size: 1rem;
 	color: var(--gray-dark);
 	padding: 0.5rem;
 	border: 0.1rem solid var(--aqua);
