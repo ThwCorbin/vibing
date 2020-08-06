@@ -43,11 +43,12 @@ class SignUp extends Component {
 		})
 	}
 
-	handleSignUp(e) {
+	handleSignUp(username, password) {
+		console.log("singing")
 		// e.preventDefault()
-		axios.post('http://localhost:5005/home/users/signup', {
-			username: this.state.username,
-			password: this.state.password
+		axios.post('https://vibing-api.herokuapp.com/home/users/signup', {
+			username: username,
+			password: password
 		})
 			.then(response => {
 				localStorage.token = response.data.token
