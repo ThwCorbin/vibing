@@ -3,14 +3,15 @@ import './Posts.css';
 
 function Posts(props) {
     return (
-        <nav className="post">
-            <h1>where is post going to be</h1>
+        <div className="posts">
+            <nav className="post">
+                <h1>where is post going to be</h1>
 
 
 
 
-        </nav>
-
+            </nav>
+        </div>
 
 
     )
