@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Textarea.css";
+import Button from "../Button/Button";
 
 let url = "https://vibing-api.herokuapp.com/home/posts";
 
@@ -7,7 +8,7 @@ class Textarea extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			value: "We need your good Vibes",
+			value: "",
 		}; //state
 
 		this.handleChange = this.handleChange.bind(this);
@@ -20,6 +21,8 @@ class Textarea extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
+		// Prevent user from submitting ""
+		if (this.state.value === "") return;
 
 		const newPost = {
 			post: this.state.value,
@@ -35,6 +38,7 @@ class Textarea extends Component {
 
 		fetch(url, optionPOST)
 			.then((res) => res.json())
+			.then(() => this.setState({ value: "" }))
 			.then(this.props.callback())
 			.catch((err) => {
 				console.log(err);
@@ -45,9 +49,13 @@ class Textarea extends Component {
 		return (
 			<form className="form form-post" onSubmit={this.handleSubmit}>
 				<label>
-					<textarea value={this.state.value} onChange={this.handleChange} />
+					<textarea
+						value={this.state.value}
+						placeholder="         Post a Vibe ♡"
+						onChange={this.handleChange}
+					/>
 				</label>
-				<input type="submit" value="Submit" />
+				<Button type="primary" small outline label="Submit" />
 			</form>
 		); //return
 	} //render
