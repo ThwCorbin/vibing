@@ -22,8 +22,8 @@ class App extends Component {
 					<Route path="/inspirations" component={Inspirations} exact={true} />
 				</main>
 			</React.Fragment>
-		);
-	}
+		); //return
+	} //render
 }
 
 export default App;
