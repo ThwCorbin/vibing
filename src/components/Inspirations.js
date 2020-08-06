@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import Header from "./Header.js";
 
-let url = "https://vibing-api.herokuapp.com/home/inspirations"
-
+let url = "https://vibing-api.herokuapp.com/home/inspirations";
 const optionGET = {
   method: "GET",
   headers: {
@@ -28,12 +28,19 @@ class Inspirations extends Component {
     let list = this.state.data.map((item) => {
       return (
         <div>
-         <p></p>
+          <p>{item.quote}</p>
+          
+          <p>{item.name}</p>
         </div>
       ); //return
     });
 
-    return <div className="players">{list}</div>;
+    return (
+      <React.Fragment>
+        <Header />
+        <div className="players">{list}</div>
+      </React.Fragment>
+    );
   } //render
 } //component
 

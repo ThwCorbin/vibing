@@ -7,6 +7,7 @@ import Button from "./Button.js";
 import Posts from "./Posts.js";
 import SignUp from "./SignUp";
 import Home from "./Home";
+import Inspirations from './Inspirations'
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,8 @@ class App extends Component {
         <main>
           <Route path="/home" component={Home} exact={true} />
           <Route path="/signup" component={SignUp} exact={true} />
+          <Route path="/inspirations" component={Inspirations} exact={true} />
+
         </main>
       </React.Fragment>
     );
