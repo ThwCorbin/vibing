@@ -20,9 +20,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <main>
-          <Route path="/signup" component={SignUp} exact={true} />
           <Route path="/home" component={Home} exact={true} />
-          <Route path="/" render={() => <Redirect to="/home" />}/>
+          <Route path="/signup" component={SignUp} exact={true} />
         </main>
       </React.Fragment>
     );
