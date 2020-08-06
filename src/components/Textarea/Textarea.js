@@ -52,6 +52,7 @@ class Textarea extends Component {
 					<textarea
 						value={this.state.value}
 						placeholder="         Post a Vibe ♡"
+						maxLength="195"
 						onChange={this.handleChange}
 					/>
 				</label>

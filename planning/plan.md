@@ -36,16 +36,17 @@ This project will be a social "inspiration" website. Similar to Facebook but "on
 - API responds with 10 vibes
 - Front end displays vibes and a vibe post/create area
 - User can click button to post a vibe
-- User can click on vibes to CRUD, including reading comments for that vibe, update and deleting vibes or comments, etc.
-- API responds on completion of CRUD operations, and front end displays created comment, updated or deleted post or comment
-- Users name does NOT show with comment
+- User can click on vibes to CRUD
+- API responds on completion of CRUD operations, and front end displays updated or deleted vibe
 - Website displays well on a 768x1024 screen and larger
-- CRUD form is basic
 
 ### Silver: looks and works better
 
+- User can click on vibes to CRUD, including reading comments for that vibe, update and deleting vibes or comments, etc.
+- API responds on completion of CRUD operations, and front end displays created comment, updated or deleted post or comment
+- Users name does NOT show with comment
 - Website displays well on small phones
-- CRUD form is fancy
+- CRUD for comments
 - 10 vibes followed by either click for more or automatically loads
 - API documentation and a link to it on nav bar
 - Search posts via search input

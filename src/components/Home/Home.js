@@ -15,7 +15,7 @@ class Home extends Component {
 	}
 
 	handleEvent = (e) => {
-		console.log(e);
+		console.log(e.target.id);
 	};
 
 	getPosts = () => {
