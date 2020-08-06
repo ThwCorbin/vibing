@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
+import Button from "../Button/Button";
+
 // React forms https://reactjs.org/docs/forms.html#gatsby-focus-wrapper
 class Form extends Component {
 	constructor(props) {
@@ -21,10 +23,7 @@ class Form extends Component {
 	}
 	render() {
 		return (
-			<form
-				className=" form form-sign-in form-sign-up"
-				onSubmit={this.handleSubmit}
-			>
+			<form className=" form form-sign-up" onSubmit={this.handleSubmit}>
 				<label>
 					<input
 						name="user"
@@ -43,7 +42,8 @@ class Form extends Component {
 						onChange={this.handleChange}
 					/>
 				</label>
-				<input type="submit" value="Submit" />
+				<Button type="submit" outline small label="Submit" />
+				{/* <input type="submit" value="Submit" /> */}
 			</form>
 		); //return
 	}

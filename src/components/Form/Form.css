@@ -1,12 +1,13 @@
 .form > label {
-	color: var(--blue);
 }
 
 .form > label > input {
-	width: 95%;
-	margin-top: 0.25rem;
+	width: 5rem;
+	color: var(--blue);
+	border: 0.1rem solid var(--aqua);
+	margin: 0.5rem;
 }
 
-.form > br {
-	margin-bottom: 1rem;
+.form button {
+	color: var(--black);
 }
