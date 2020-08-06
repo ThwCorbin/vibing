@@ -45,7 +45,7 @@ class Home extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<Addpost callback={this.getPosts} />
+				<Addpost callback={() => this.getPosts} />
 				<ul className="ul-posts">{postsList}</ul>
 			</div>
 		);
