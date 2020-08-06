@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
 import SignUp from "../SignUp/SignUp";
-import Home from "./Home";
+import Home from "../Home/Home";
 import Inspirations from "../Inspirations/Inspirations";
 
 class App extends Component {
