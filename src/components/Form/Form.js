@@ -18,7 +18,6 @@ class Form extends Component {
 		e.preventDefault();
 
 		this.props.formCallback(this.state.user, this.state.password);
-
 	}
 	render() {
 		return (
