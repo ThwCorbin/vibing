@@ -43,6 +43,14 @@ class Vibe extends Component {
               return (
                   <React.Fragment>
             <Header />
+            <form onSubmit={this.update}>
+                <input 
+                type= "text"
+                placeholder="Update Vibe"
+                ></input>
+                <input type="submit">
+                </input>
+            </form>
         <div>{item.post}</div>
         <button onClick ={()=> {this.remove(item._id)}}>Delete</button>
           </React.Fragment>
@@ -54,7 +62,32 @@ class Vibe extends Component {
 return <div>{display}</div>
 } //render
 
-
+update = (e) => {
+    e.preventDefault();
+    console.dir(e.target[0].value);
+    console.log(this.props.match.params.name);
+    console.log(url + "/name/" + this.props.match.params.name);
+    const formData = {
+        "post": document.querySelector("input").value
+    }
+   
+    console.log(formData);
+   
+    const optionPUT = {
+      "method": "PUT",
+      "headers": {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    };
+    fetch(url + "/" + this.props.match.params.id, optionPUT)
+      .then((res)=> res.json())
+      .then((data) =>
+      console.log(data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }; //update
 
 remove(props) {
     console.log(props)
