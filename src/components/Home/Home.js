@@ -20,6 +20,7 @@ class Home extends Component {
 
 	getPosts = () => {
 		// * Fetch posts
+		console.log("Something fetched");
 		fetch(url)
 			.then((res) => {
 				return res.json();
@@ -45,7 +46,7 @@ class Home extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<Addpost callback={() => this.getPosts} />
+				<Addpost callback={this.getPosts} />
 				<ul className="ul-posts">{postsList}</ul>
 			</div>
 		);

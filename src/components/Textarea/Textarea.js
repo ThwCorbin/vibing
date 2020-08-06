@@ -20,13 +20,10 @@ class Textarea extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(`Text to submit: ${this.state.value}`);
 
 		const newPost = {
 			post: this.state.value,
 		};
-
-		console.log(newPost);
 
 		const optionPOST = {
 			method: "POST",
@@ -35,10 +32,9 @@ class Textarea extends Component {
 			},
 			body: JSON.stringify(newPost),
 		};
-		console.log(this.props.callback);
+
 		fetch(url, optionPOST)
 			.then((res) => res.json())
-			.then((data) => console.log(data))
 			.then(this.props.callback())
 			.catch((err) => {
 				console.log(err);
