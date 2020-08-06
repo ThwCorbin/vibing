@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Home.css";
 import Header from "../Header/Header";
-import Addpost from "../Addpost/Addpost";
 import Post from "../Post/Post";
+import Textarea from "../Textarea/Textarea";
 
 const url = `https://vibing-api.herokuapp.com/home/posts`;
 
@@ -27,7 +27,7 @@ class Home extends Component {
 			})
 			.then((posts) => {
 				this.setState({
-					posts: posts,
+					posts: posts.reverse(),
 				}); //setState
 			})
 			.then(() => {}); //fetch
@@ -46,7 +46,7 @@ class Home extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<Addpost callback={this.getPosts} />
+				<Textarea callback={this.getPosts} />
 				<ul className="ul-posts">{postsList}</ul>
 			</div>
 		);
