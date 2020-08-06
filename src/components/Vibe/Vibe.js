@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
+import Button from "../Button/Button";
 
 let url = "https://vibing-api.herokuapp.com/home/posts";
 
@@ -42,13 +43,13 @@ class Vibe extends Component {
 					<React.Fragment>
 						<Header />
 						<div>{item.post}</div>
-						<button
+						<div
 							onClick={() => {
 								this.remove(item._id);
 							}}
 						>
-							Delete
-						</button>
+							<Button type="primary" outline label="Delete" />
+						</div>
 					</React.Fragment>
 				);
 			} else {
