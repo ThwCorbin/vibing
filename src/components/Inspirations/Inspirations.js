@@ -24,17 +24,14 @@ class Inspirations extends Component {
 			.catch((err) => {
 				console.log(err);
 			});
-
-			
 	} //componentWillMount
 	render() {
 		let list = this.state.data.map((item) => {
 			return (
-				<div>
-					<p>{item.quote}</p>
+				<div className="div-quote">
+					<p className="p-quote">{item.quote}</p>
 
-					<p>{item.name}</p>
-					{console.log(this.state.data)}
+					<p className="p-name">{item.name}</p>
 				</div>
 			); //return
 		});
@@ -42,7 +39,7 @@ class Inspirations extends Component {
 		return (
 			<React.Fragment>
 				<Header />
-				<div>{list}</div>
+				<div className="div-inspirations">{list}</div>
 			</React.Fragment>
 		);
 	} //render
