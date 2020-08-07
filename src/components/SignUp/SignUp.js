@@ -38,8 +38,6 @@ class SignUp extends Component {
 	}
 
 	handleSignUp(username, password) {
-		console.log("singing");
-		// e.preventDefault()
 		axios
 			.post("https://vibing-api.herokuapp.com/home/users/signup", {
 				username: username,
@@ -51,10 +49,6 @@ class SignUp extends Component {
 			})
 			.catch((err) => console.log(err));
 	}
-	// handleForm(username, password) {
-	// 	console.log(username, password);
-
-	// }
 
 	render() {
 		return (
