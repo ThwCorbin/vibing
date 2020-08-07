@@ -1,3 +1,29 @@
+/** Variables ############### */
+:root {
+	--white: #ffffff;
+	--white-off: #f0f8ff;
+	--white-near: #f2f4f7;
+	--red: #eb5050;
+	--pink: #e97da4;
+	--coral: #ff6f62;
+	--green: #bef57c;
+	--green-medium: #57a157;
+	--aqua: #92dbe1;
+	--aqua-haze: #c3d3d4;
+	--blue: #8ba6e9;
+	--blue-light: #bed0f4;
+	--blue-medium: #7e96c4;
+	--blue-bright: #005eff;
+	--blue-dark: #001d81;
+	--blue-transparent: 0, 29, 129;
+	--purple: #9376e4;
+	--khaki: #d7b7bc;
+	--silver: #c0c0c0;
+	--gray: #788ea1;
+	--gray-dark: #504c4e;
+	--black: #000000;
+}
+
 button {
 	font-size: 10px;
 	color: var(--white);
