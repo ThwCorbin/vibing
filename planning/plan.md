@@ -4,10 +4,6 @@
 
 This project will be a social "inspiration" website. Similar to Facebook but "only good vibes" are allowed. Clients will be able to post their own "good vibes" along with viewing inspirational quotes from famous people.
 
-- Login Model for logging in/signing up (user String, password String)
-- Vibe Model for vibe (post String, comments Array of Strings)
-- Inspiration Model for inspiration (name String, quote String)
-
 ## Bronze, Silver, and Gold
 
 ### Requirements all
@@ -28,24 +24,26 @@ This project will be a social "inspiration" website. Similar to Facebook but "on
 
 - Nav bar with Home/Vibing, Inspiration, Sign Up on all pages
 - React Router takes user to routes
-- Model for logging in/signing up (user String, password String)
+- Model for vibe (user String, password String)
+- Model for sign up (user String, password String)
 - Model for inspiration (name String, quote String)
 - React front end contacts the JSON API on page load
 - API responds with list of vibes
 - Front end displays vibes and a vibe post/create area
 - User can click button to post a vibe
 - User can click on vibes to CRUD
+- User can sign up for an account, which generates an authentication token
 - API responds on completion of CRUD operations
 - Website displays well on a 768x1024 screen and larger
 
 ### Silver: looks and works better
 
+- Model for vibe (post String, comments Array of Strings)
 - User can click on vibes to CRUD, including reading comments for that vibe, update and deleting vibes or comments, etc.
 - API responds on completion of CRUD operations, and front end displays created comment, updated or deleted post or comment
-- Users name does shows with comment
+- Users name shows with comment
 - Website displays well on small phones
 - CRUD for comments
-- Model for vibe (post String, comments Array of Strings)
 - 10 vibes followed by either click for more or automatically loads
 - Home page is a login page if the user is not logged in
 - Users name shows up with comment
