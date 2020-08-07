@@ -19,13 +19,11 @@ class Home extends Component {
 	}
 
 	handleEvent = (e) => {
-		console.log(e.target.id);
 		this.setState({ id: e.target.id });
 	};
 
 	getPosts = () => {
 		// * Fetch posts
-		console.log("Something fetched");
 		fetch(url)
 			.then((res) => {
 				return res.json();

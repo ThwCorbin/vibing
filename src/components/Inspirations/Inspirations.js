@@ -26,9 +26,9 @@ class Inspirations extends Component {
 			});
 	} //componentWillMount
 	render() {
-		let list = this.state.data.map((item) => {
+		let list = this.state.data.map((item, idx) => {
 			return (
-				<div className="div-quote">
+				<div className="div-quote" key={idx}>
 					<p className="p-quote">{item.quote}</p>
 
 					<p className="p-name">{item.name}</p>

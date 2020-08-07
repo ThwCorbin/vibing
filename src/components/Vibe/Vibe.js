@@ -30,7 +30,6 @@ class Vibe extends Component {
 		fetch(url, optionGET)
 			.then((res) => res.json())
 			.then((data) => this.setState({ data }))
-			.then(console.log(this.state.data))
 			.catch((err) => {
 				console.log(err);
 			});
@@ -52,14 +51,12 @@ class Vibe extends Component {
 
 		fetch(url + "/" + this.props.match.params.id, optionPUT)
 			.then((res) => res.json())
-			.then((data) => console.log(data))
 			.catch((err) => {
 				console.log(err);
 			});
 	}; //update
 
 	remove(props) {
-		console.log(props);
 		fetch(url + "/" + props, optionDELETE)
 			.then((res) => res.json())
 			.catch((err) => {
