@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
-import Button from "../Button/Button";
 import Form from "../Form/Form";
 
 let url = "https://vibing-api.herokuapp.com/home/posts";
