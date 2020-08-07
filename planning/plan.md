@@ -4,10 +4,9 @@
 
 This project will be a social "inspiration" website. Similar to Facebook but "only good vibes" are allowed. Clients will be able to post their own "good vibes" along with viewing inspirational quotes from famous people.
 
-- Login Model for logging in/signing up (email String, password String)
+- Login Model for logging in/signing up (user String, password String)
 - Vibe Model for vibe (post String, comments Array of Strings)
 - Inspiration Model for inspiration (name String, quote String)
-- - Silver plan adds user String to Login and Vibe Models
 
 ## Bronze, Silver, and Gold
 
@@ -27,29 +26,27 @@ This project will be a social "inspiration" website. Similar to Facebook but "on
 
 ### Bronze: minimum viable product
 
-- Nav bar with Home/Vibing, Inspiration, Login, Create Account on all pages
+- Nav bar with Home/Vibing, Inspiration, Sign Up on all pages
 - React Router takes user to routes
-- Model for logging in/signing up (email String, password String)
-- Model for vibe (post String, comments Array of Strings)
+- Model for logging in/signing up (user String, password String)
 - Model for inspiration (name String, quote String)
 - React front end contacts the JSON API on page load
-- API responds with 10 vibes
+- API responds with list of vibes
 - Front end displays vibes and a vibe post/create area
 - User can click button to post a vibe
 - User can click on vibes to CRUD
-- API responds on completion of CRUD operations, and front end displays updated or deleted vibe
+- API responds on completion of CRUD operations
 - Website displays well on a 768x1024 screen and larger
 
 ### Silver: looks and works better
 
 - User can click on vibes to CRUD, including reading comments for that vibe, update and deleting vibes or comments, etc.
 - API responds on completion of CRUD operations, and front end displays created comment, updated or deleted post or comment
-- Users name does NOT show with comment
+- Users name does shows with comment
 - Website displays well on small phones
 - CRUD for comments
+- Model for vibe (post String, comments Array of Strings)
 - 10 vibes followed by either click for more or automatically loads
-- API documentation and a link to it on nav bar
-- Search posts via search input
 - Home page is a login page if the user is not logged in
 - Users name shows up with comment
 - Model for vibe (userID String or Number, post String, comments Array of Strings)
@@ -60,63 +57,60 @@ This project will be a social "inspiration" website. Similar to Facebook but "on
 
 - User can add an image
 - User can respond to post with emoji
+- User can search posts
 - User can search for other users
 
 ## Data
 
-- MongoDB database seeded with ten vibes
+- MongoDB database seeded with vibes
 - Mongoose
 - Express
 - Node.js
 - API served by Heroku
-- API documentation on /doc route
+- API repo: https://github.com/ThwCorbin/vibing-api
+- API documentation: https://github.com/ThwCorbin/vibing-api/blob/master/README.md
 - API returns results as JSON
-- Vibe JSON format:
+- Vibe JSON response:
 
 ```json
  	HTTP/1.1 200 OK
 [
- {
-   "post": "We are all in this together!",
-   "comments": [
-     "Classic post!",
-     "I love it",
-     "You are a legend"
+  {
+    "comments": [
+      "Woo hoo",
+      "That is so true"
     ],
-   "_id": "5f21f0650619bc73ac0f57b3",
-   "__v": 0
- },
- follwed by 9 more vibe objects
+    "_id": "5f2d55569096400004ca098d",
+    "post": "Smile and the world smiles with you",
+    "__v": 0
+  },
 ]
 ```
 
-- Inspiration JSON format:
+- Inspiration JSON response:
 
 ```json
  	HTTP/1.1 200 OK
 [
- {
-   "quote": "This is an inspiring quote!",
-   "quoteAuthor": John Q Positive,
-   "_id": "5f21f0650619bc73ac0f57b3",
-   "__v": 0
- },
- follwed by 9 more vibe objects
+   {
+    "_id": "5f2d55569096400004ca0996",
+    "name": "Martin Luther King Jr.",
+    "quote": "If you cant't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
+    "__v": 0
+  }
 ]
 ```
 
-- Login/Sign up format:
+- Sign up JSON response:
 
 ```json
  	HTTP/1.1 200 OK
 [
- {
-   "user-name": "tomtom", // only in silver plan
-   "email": "tom@tom.com",
-   "password": "password1",
-   "web-token": "something-is-here",
-   "_id": "5f21f0650619bc73ac0f57b3",
-   "__v": 0
- }
+  {
+    "_id": "5f2d9373e83a3700173b851d",
+    "username": "JohnWayne",
+    "password": "password1",
+    "__v": 0
+  }
 ]
 ```
