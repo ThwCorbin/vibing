@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Form from "../Form/Form";
 import Header from "../Header/Header";
+import "./SignUp.css";
 
 class SignUp extends Component {
 	constructor(props) {
@@ -41,7 +42,9 @@ class SignUp extends Component {
 		return (
 			<React.Fragment>
 				<Header />
-				<Form formCallback={this.handleSignUp} />
+				<div className="div-sign-up-form">
+					<Form formCallback={this.handleSignUp} />
+				</div>
 			</React.Fragment>
 		);
 	}

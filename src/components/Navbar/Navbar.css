@@ -1,5 +1,6 @@
 .navbar {
-	width: 70%;
+	width: 100%;
+	max-width: 30rem;
 }
 
 .navbar > ul {

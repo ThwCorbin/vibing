@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
+import "./Vibe.css";
 
 let url = "https://vibing-api.herokuapp.com/home/posts";
 
@@ -71,9 +72,13 @@ class Vibe extends Component {
 				return (
 					<React.Fragment>
 						<Header />
-						<Form id={item._id} formDeleteCallback={this.handleDelete} />
-						<div>{item.post}</div>
-						<Form formUpdateCallback={this.handleUpdate} />
+						<div className="div-vibe-post-forms">
+							<div className="div-vibe-post">{item.post}</div>
+							<div className="div-vibe-forms">
+								<Form formUpdateCallback={this.handleUpdate} />
+								<Form id={item._id} formDeleteCallback={this.handleDelete} />
+							</div>
+						</div>
 					</React.Fragment>
 				);
 			} else {
