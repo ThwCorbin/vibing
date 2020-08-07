@@ -44,7 +44,7 @@ class Form extends Component {
 						<input
 							name="update"
 							type="text"
-							placeholder="update"
+							placeholder="  update"
 							value={this.state.update}
 							onChange={this.handleChange}
 						/>
@@ -59,7 +59,7 @@ class Form extends Component {
 						<input
 							name="user"
 							type="text"
-							placeholder="user"
+							placeholder="  user"
 							value={this.state.user}
 							onChange={this.handleChange}
 						/>
@@ -68,7 +68,7 @@ class Form extends Component {
 						<input
 							name="password"
 							type="text"
-							placeholder="password"
+							placeholder="  password"
 							value={this.state.password}
 							onChange={this.handleChange}
 						/>
