@@ -18,7 +18,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"storybook": "start-storybook",
-		"deploy-storybook": "storybook-to-ghpages",
+		"build-storybook": "build-storybook -c .storybook -o stories",
 		"build": "CI= react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -41,7 +41,6 @@
 	"devDependencies": {
 		"@storybook/addon-actions": "^5.3.19",
 		"@storybook/react": "^5.3.19",
-		"@storybook/storybook-deployer": "^2.8.6",
 		"storybook-react-router": "^1.0.8"
 	}
 }
