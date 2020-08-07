@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Inspirations.css";
 import Header from "../Header/Header";
+import quote from "../Quote/Quote";
+import Quote from "../Quote/Quote";
 
 let url = "https://vibing-api.herokuapp.com/home/inspirations";
 const optionGET = {
@@ -27,13 +29,7 @@ class Inspirations extends Component {
 	} //componentWillMount
 	render() {
 		let list = this.state.data.map((item, idx) => {
-			return (
-				<div className="div-quote" key={idx}>
-					<p className="p-quote">{item.quote}</p>
-
-					<p className="p-name">{item.name}</p>
-				</div>
-			); //return
+			return <Quote quote={item.quote} name={item.name} key={idx} />; //return
 		});
 
 		return (

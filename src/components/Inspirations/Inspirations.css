@@ -1,23 +1,7 @@
 .div-inspirations {
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
-	/* justify-content: center; */
 	width: 20rem;
 	list-style: none;
 	margin: 1rem;
-}
-
-.div-quote {
-	margin: 1rem;
-}
-
-.p-quote {
-	color: var(--blue);
-	margin-bottom: 0.35rem;
-}
-
-.p-name {
-	color: var(--blue-medium);
-	margin-left: 1rem;
 }

@@ -1,0 +1,21 @@
+.div-quote-and-name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	border-bottom: 0.1rem solid var(--aqua);
+}
+
+.p-quote-quote {
+	width: 19.5rem;
+	min-height: 5rem;
+	font-size: 1rem;
+	color: var(--gray-dark);
+	padding: 0.5rem;
+	border: 0.1rem solid var(--coral);
+	margin: 1rem;
+}
+
+.p-quote-name {
+	color: var(--aqua-haze);
+}
