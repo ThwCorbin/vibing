@@ -19,7 +19,9 @@ class Form extends Component {
 	}
 	handleSubmit(e) {
 		e.preventDefault();
-		if (this.props.formUpdateCallback) {
+		if (this.props.formDeleteCallback) {
+			this.props.formDeleteCallback(this.props.id);
+		} else if (this.props.formUpdateCallback) {
 			this.props.formUpdateCallback(this.state.update);
 			this.setState({ value: "" });
 		} else {
@@ -29,9 +31,15 @@ class Form extends Component {
 	}
 
 	render() {
-		if (this.props.formUpdateCallback) {
+		if (this.props.formDeleteCallback) {
 			return (
-				<form className=" form form-sign-up" onSubmit={this.handleSubmit}>
+				<form className=" form form-delete" onSubmit={this.handleSubmit}>
+					<Button type="submit" outline small label="Delete" />
+				</form>
+			);
+		} else if (this.props.formUpdateCallback) {
+			return (
+				<form className=" form form-update" onSubmit={this.handleSubmit}>
 					<label>
 						<input
 							name="update"

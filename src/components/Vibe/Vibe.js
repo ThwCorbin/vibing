@@ -26,7 +26,8 @@ class Vibe extends Component {
 			data: [],
 			id: "",
 		};
-	}
+	} //constructor
+
 	componentWillMount() {
 		fetch(url, optionGET)
 			.then((res) => res.json())
@@ -57,13 +58,13 @@ class Vibe extends Component {
 			});
 	}; //handleUpdate
 
-	remove(props) {
+	handleDelete = (props) => {
 		fetch(url + "/" + props, optionDELETE)
 			.then((res) => res.json())
 			.catch((err) => {
 				console.log(err);
 			});
-	} //remove
+	}; //handleDelete
 
 	render() {
 		let display = this.state.data.map((item) => {
@@ -71,15 +72,9 @@ class Vibe extends Component {
 				return (
 					<React.Fragment>
 						<Header />
+						<Form id={item._id} formDeleteCallback={this.handleDelete} />
 						<div>{item.post}</div>
 						<Form formUpdateCallback={this.handleUpdate} />
-						<div
-							onClick={() => {
-								this.remove(item._id);
-							}}
-						>
-							<Button type="primary" outline label="Delete" />
-						</div>
 					</React.Fragment>
 				);
 			} else {
