@@ -14,7 +14,7 @@ Repo API: https://github.com/ThwCorbin/vibing-api
 
 Vibing is a React front end that uses a MongoDB, Express, and Node.js back end that we built for a group project. Users can create, read, update, and delete vibes. Users can sign up for an account, which generates an authentication token. Users can view inspirational quotes to get their creative vibes moving.
 
-<!-- Screenshot goes here -->
+![Vibing screenshot](./vibing-screenshot.png "Vibing App")
 
 This is our eighth project, and our first major group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
