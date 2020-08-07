@@ -4,9 +4,6 @@ import Button from "./Button";
 storiesOf("Button", module)
 	//* Primary *************** */
 	.add("Primary", () => <Button type="primary" label="Do something" />)
-	.add("Primary Hover", () => (
-		<Button type="primary" hover label="Do something" />
-	))
 	.add("Primary Outline", () => (
 		<Button type="primary" outline label="Do something" />
 	))

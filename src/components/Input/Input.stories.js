@@ -3,9 +3,12 @@ import { storiesOf } from "@storybook/react";
 import Input from "./Input";
 
 storiesOf("Input", module)
-	.add("Email", () => (
-		<Input id="email" type="text" name="email" placeholder="Email" />
+	.add("User", () => (
+		<Input id="user" type="text" name="email" placeholder="  User" />
 	))
 	.add("Password", () => (
-		<Input id="password" type="text" name="password" placeholder="Password" />
+		<Input id="password" type="text" name="password" placeholder="  Password" />
+	))
+	.add("Update", () => (
+		<Input id="update" type="text" name="update" placeholder="  Update" />
 	)); // storiesOf "Input"
