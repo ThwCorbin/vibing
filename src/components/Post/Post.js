@@ -1,7 +1,5 @@
 import React from "react";
 import "./Post.css";
-import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 
 function Post(props) {
 	let post = props.post.post;
