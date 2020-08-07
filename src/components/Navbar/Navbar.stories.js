@@ -1,8 +1,9 @@
 import React from "react";
+import { Route, Link } from "react-router-dom";
 import { storiesOf } from "@storybook/react";
+import StoryRouter from "storybook-react-router";
 import Navbar from "./Navbar";
 
 storiesOf("Navbar", module)
-	.add("Home", () => <Navbar id="home" text="Vibes" />)
-	.add("Inspirations", () => <Navbar id="inspirations" text="Inspirations" />)
-	.add("Signup", () => <Navbar id="signup" text="Sign Up" />); // storiesOf "Navbar"
+	.addDecorator(StoryRouter())
+	.add("Navbar", () => <Navbar id="navbar" />); // storiesOf "Navbar"
