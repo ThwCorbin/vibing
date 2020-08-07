@@ -1,0 +1,7 @@
+.div-inspirations {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	list-style: none;
+	margin: 1rem;
+}

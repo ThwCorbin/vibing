@@ -1,7 +1,12 @@
 .div-posts {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	list-style: none;
 	margin: 1rem;
+}
+
+.div-posts > button {
+	width: 3rem;
+	margin-top: -0.5rem;
 }

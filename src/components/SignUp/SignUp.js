@@ -1,22 +1,16 @@
 import React, { Component } from "react";
-// import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 import Form from "../Form/Form";
 import Header from "../Header/Header";
+import "./SignUp.css";
 
 class SignUp extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			username: "",
-			password: "",
 			isLoggedIn: false,
 		};
-
-		this.handleInput = this.handleInput.bind(this);
-
-		this.handleSignUp = this.handleSignUp.bind(this);
 	}
 
 	componentDidMount() {
@@ -31,15 +25,7 @@ class SignUp extends Component {
 		}
 	}
 
-	handleInput(e) {
-		this.setState({
-			[e.target.name]: e.target.value,
-		});
-	}
-
 	handleSignUp(username, password) {
-		console.log("singing");
-		// e.preventDefault()
 		axios
 			.post("https://vibing-api.herokuapp.com/home/users/signup", {
 				username: username,
@@ -51,16 +37,14 @@ class SignUp extends Component {
 			})
 			.catch((err) => console.log(err));
 	}
-	// handleForm(username, password) {
-	// 	console.log(username, password);
-
-	// }
 
 	render() {
 		return (
 			<React.Fragment>
 				<Header />
-				<Form formCallback={this.handleSignUp} />
+				<div className="div-sign-up-form">
+					<Form formCallback={this.handleSignUp} />
+				</div>
 			</React.Fragment>
 		);
 	}
