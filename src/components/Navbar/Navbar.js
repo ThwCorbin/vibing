@@ -6,15 +6,18 @@ function Navbar(props) {
 	return (
 		<nav className="navbar">
 			<ul>
-				<Link to="/">
-					<li className="li-home">Vibes</li>
-				</Link>
-				<Link to="/inspirations">
-					<li className="li-inspiration">Inspiration</li>
-				</Link>
-				<Link to="/signup">
-					<li className="li-sign-up">Sign Up</li>
-				</Link>
+				<li className="li-home">
+					<Link to="/">Vibes</Link>
+				</li>
+
+				<li className="li-inspiration">
+					<Link to="/inspirations">Inspiration</Link>
+				</li>
+
+				<li className="li-sign-up">
+					{" "}
+					<Link to="/signup">Sign Up</Link>
+				</li>
 			</ul>
 		</nav>
 	);
