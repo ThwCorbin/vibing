@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
+import Form from "../Form/Form";
 
 let url = "https://vibing-api.herokuapp.com/home/posts";
 
@@ -35,10 +36,9 @@ class Vibe extends Component {
 			});
 	} //componentWillMount
 
-	update = (e) => {
-		e.preventDefault();
+	handleUpdate = (updatedText) => {
 		const formData = {
-			post: document.querySelector("input").value,
+			post: updatedText,
 		};
 
 		const optionPUT = {
@@ -51,10 +51,11 @@ class Vibe extends Component {
 
 		fetch(url + "/" + this.props.match.params.id, optionPUT)
 			.then((res) => res.json())
+			.then((data) => console.log(data))
 			.catch((err) => {
 				console.log(err);
 			});
-	}; //update
+	}; //handleUpdate
 
 	remove(props) {
 		fetch(url + "/" + props, optionDELETE)
@@ -70,11 +71,8 @@ class Vibe extends Component {
 				return (
 					<React.Fragment>
 						<Header />
-						<form onSubmit={this.update}>
-							<input type="text" placeholder="Update Vibe"></input>
-							<input type="submit"></input>
-						</form>
 						<div>{item.post}</div>
+						<Form formUpdateCallback={this.handleUpdate} />
 						<div
 							onClick={() => {
 								this.remove(item._id);

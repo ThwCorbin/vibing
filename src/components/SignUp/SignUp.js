@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 import Form from "../Form/Form";
 import Header from "../Header/Header";
@@ -9,14 +8,8 @@ class SignUp extends Component {
 		super(props);
 
 		this.state = {
-			username: "",
-			password: "",
 			isLoggedIn: false,
 		};
-
-		this.handleInput = this.handleInput.bind(this);
-
-		this.handleSignUp = this.handleSignUp.bind(this);
 	}
 
 	componentDidMount() {
@@ -29,12 +22,6 @@ class SignUp extends Component {
 				isLoggedIn: false,
 			});
 		}
-	}
-
-	handleInput(e) {
-		this.setState({
-			[e.target.name]: e.target.value,
-		});
 	}
 
 	handleSignUp(username, password) {
