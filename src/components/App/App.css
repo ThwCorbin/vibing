@@ -39,6 +39,10 @@ body {
 	height: 100vh;
 }
 
+textarea {
+	resize: none;
+}
+
 .App {
 	display: flex;
 	flex-direction: column;
