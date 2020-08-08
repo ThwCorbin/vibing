@@ -17,12 +17,12 @@ class Textarea extends Component {
 
 	handleChange(e) {
 		this.setState({ value: e.target.value });
-	}
+	} //handleChange
 
 	handleSubmit(e) {
 		e.preventDefault();
-		// Prevent user from submitting ""
-		if (this.state.value === "") return;
+		// Prevent user from submitting "" or " "
+		if (this.state.value === "" || this.state.value === " ") return;
 
 		const newPost = {
 			post: this.state.value,
@@ -43,7 +43,7 @@ class Textarea extends Component {
 			.catch((err) => {
 				console.log(err);
 			});
-	}
+	} //handleSubmit
 
 	render() {
 		return (

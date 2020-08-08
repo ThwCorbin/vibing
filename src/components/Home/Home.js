@@ -15,12 +15,12 @@ class Home extends Component {
 			posts: [],
 			data: [],
 			id: "",
-		};
-	}
+		}; //state
+	} //constructor
 
 	handleEvent = (e) => {
 		this.setState({ id: e.target.id });
-	};
+	}; //handleEvent
 
 	getPosts = () => {
 		// * Fetch posts
@@ -33,7 +33,6 @@ class Home extends Component {
 					posts: posts.reverse(),
 				}); //setState
 			})
-
 			.then(() => {}); //fetch
 	}; //getPosts
 
@@ -61,9 +60,9 @@ class Home extends Component {
 							<Button type="primary" small outline label="Edit" />
 						)}
 					</div>
-				);
-			}); //answerList
-		}
+				); //return
+			}); //postList
+		} //if this.state.posts
 		return (
 			<React.Fragment>
 				<div className="App">
@@ -72,12 +71,12 @@ class Home extends Component {
 					<div className="div-posts">{postsList}</div>
 				</div>
 			</React.Fragment>
-		);
-	}
+		); //return
+	} //render
 
 	componentDidMount() {
 		this.getPosts();
 	} //componentDidMount
-}
+} //Home
 
 export default Home;
