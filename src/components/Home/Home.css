@@ -10,3 +10,9 @@
 	width: 3rem;
 	margin-top: -0.5rem;
 }
+
+.div-loading {
+	color: var(--aqua);
+	font-size: 2rem;
+	margin-top: 2rem;
+}

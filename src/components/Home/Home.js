@@ -62,7 +62,9 @@ class Home extends Component {
 					</div>
 				); //return
 			}); //postList
-		} //if this.state.posts
+		} else {
+			postsList = <div className="div-loading">Vibes Loading</div>;
+		}
 		return (
 			<React.Fragment>
 				<div className="App">
