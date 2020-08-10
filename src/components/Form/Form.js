@@ -23,7 +23,7 @@ class Form extends Component {
 			this.props.formDeleteCallback(this.props.id);
 		} else if (this.props.formUpdateCallback) {
 			this.props.formUpdateCallback(this.state.update);
-			this.setState({ value: "" });
+			this.setState({ update: "" });
 		} else {
 			this.props.formCallback(this.state.user, this.state.password);
 			this.setState({ user: "", password: "" });
